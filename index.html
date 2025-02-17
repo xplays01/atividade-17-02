@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute gameplay soul like do ano</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="background"></div>
+        <div id="lightning"></div>
+        <div id="ground"></div>
+
+        <!-- Personagens -->
+        <div class="character" id="player1">
+            <div class="hp-bar"><div class="hp" id="hp1"></div></div>
+            <img src="img/p1.gif" alt="Player 1">
+        </div>
+        <div class="character" id="player2">
+            <div class="hp-bar"><div class="hp" id="hp2"></div></div>
+            <img src="img/p2.gif" alt="Player 2">
+        </div>
+
+        <!-- Dado -->
+        <div id="dice-container">
+            <div id="dice">🎲</div>
+        </div>
+
+        <!-- Mensagem de vitória -->
+        <div id="game-message"></div>
+
+        <!-- Botão de Recomeçar -->
+        <button id="restart-btn" class="hidden">que ir denovo?</button>
+    </div>
+
+    <!-- Sons -->
+    <audio id="game-music" src="audio/bgm.mp3" loop></audio>
+    <audio id="damage-sound1" src="audio/blue.mp3"></audio>
+    <audio id="damage-sound2" src="audio/red.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
